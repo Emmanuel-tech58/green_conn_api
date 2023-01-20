@@ -30,7 +30,7 @@ knn = pickle.load(open('saved_model/crop_predection.sav','rb'))
 # Enter your API key here
 api_key = "5b2691c07d8a7d9776ffb21270ca7474"
 
-# base_url variable to store url
+# base_url variable to store url or openweather
 base_url = "https://api.openweathermap.org/data/2.5/weather?"
 complete_url = base_url + "lat=" + latitude + "&lon=" + longitude +  "&appid=" + api_key
 
