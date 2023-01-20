@@ -22,7 +22,6 @@ longitude = location[1]
 
 
 
-
 model = load_model('saved_model/water_soil_wetness.hdf5')
 reg_model = load_model('saved_model/reg_water_soil_wetness1.hdf5')
 knn = pickle.load(open('saved_model/crop_predection.sav','rb'))
