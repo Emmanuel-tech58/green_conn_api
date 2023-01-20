@@ -245,3 +245,15 @@ You're about to initialize a Firebase project in this directory:
 [info] 
 [info] +  Success! Logged into GitHub as Emmanuel-tech58 
 [info] 
+[debug] [2023-01-20T09:31:29.631Z] >>> [apiv2][query] GET https://api.github.com/repos/Emmanuel-tech58/green_conn_api/actions/secrets/public-key type=owner
+[debug] [2023-01-20T09:31:30.465Z] <<< [apiv2][status] GET https://api.github.com/repos/Emmanuel-tech58/green_conn_api/actions/secrets/public-key 401
+[debug] [2023-01-20T09:31:30.466Z] <<< [apiv2][body] GET https://api.github.com/repos/Emmanuel-tech58/green_conn_api/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-20T09:31:48.265Z] >>> [apiv2][query] GET https://api.github.com/repos/Emmanuel-tech58/green_conn_api/actions/secrets/public-key type=owner
+[debug] [2023-01-20T09:31:49.116Z] <<< [apiv2][status] GET https://api.github.com/repos/Emmanuel-tech58/green_conn_api/actions/secrets/public-key 401
+[debug] [2023-01-20T09:31:49.117Z] <<< [apiv2][body] GET https://api.github.com/repos/Emmanuel-tech58/green_conn_api/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-20T09:32:44.372Z] >>> [apiv2][query] GET https://api.github.com/repos/Emmanuel-tech58/green_conn_api/actions/secrets/public-key type=owner
+[debug] [2023-01-20T09:32:45.250Z] <<< [apiv2][status] GET https://api.github.com/repos/Emmanuel-tech58/green_conn_api/actions/secrets/public-key 401
+[debug] [2023-01-20T09:32:45.250Z] <<< [apiv2][body] GET https://api.github.com/repos/Emmanuel-tech58/green_conn_api/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-01-20T09:32:59.518Z] >>> [apiv2][query] GET https://api.github.com/repos/Emmanuel-tech58/green_conn_api/actions/secrets/public-key type=owner
+[debug] [2023-01-20T09:33:00.437Z] <<< [apiv2][status] GET https://api.github.com/repos/Emmanuel-tech58/green_conn_api/actions/secrets/public-key 401
+[debug] [2023-01-20T09:33:00.437Z] <<< [apiv2][body] GET https://api.github.com/repos/Emmanuel-tech58/green_conn_api/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
