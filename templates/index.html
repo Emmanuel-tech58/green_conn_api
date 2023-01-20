@@ -1,0 +1,54 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../static/css/index.css">
+    </head>
+    <body class='screen'>
+        <div class='mainContainer'>
+            <div 
+                className='container'
+            >
+                    <nav 
+                        className='homeNav'
+                    >
+                        <div>
+                            <h2 className='text-white text-2xl'>greenConect</h2>
+                        </div>
+                        <ul class='homeNavitems'>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/dash">Dashboard</Link></li>
+                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
+                        </ul>
+                        <div className='sm:hidden'>
+                            <HiMenu size={30} color="#fff"/>
+                        </div>
+                    </nav>
+                <div class='heroSection'>
+                    <div className='sm:w-3/5 flex flex-col justify-center sm:pl-20 h-full'>
+                        <h1 className='text-3xl text-white font-bold tracking-wide'>GreenConnect</h1>
+                        <p className='text-2xl text-gray-400 w-3/5'>Predict soil moisture content, analyze, visualize and practice smart farming</p>
+                    </div>
+                    <div className='flex sm:items-center'>
+                        <button
+                            className='bg-slate-200 py-1 px-3 h-12 w-48 rounded-lg text-green-500'
+                        >
+                            <Link to="/dash"> Get Started</Link>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <Features/>
+                </div>
+            </div>
+        </div>  
+    </body>
+</html>

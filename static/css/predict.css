@@ -1,0 +1,12 @@
+.predictionContainer{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.weatherContainer{
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgba(32, 159, 18, 0.5);
+    border-radius: 2rem;
+}
+

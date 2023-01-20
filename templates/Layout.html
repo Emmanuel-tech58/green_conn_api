@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../static/css/Layout.css">
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div class="sideBar">
+                <div class="header">
+                    <h4>Soil moisture content</h4>
+                    <p>Home</p>
+                </div>
+                <div class="sideLinks">
+                    <ul>
+                        <li><a href="/predict">Predict</a></li>
+                        <li>Dashboard</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="headerMenu">
+                    <di>
+                        <h3>GreenConnect</h3>
+                    </di>
+                    <div class="headerMenuItems">
+                        <a href="/">Home</a>
+                        <a href="/predict">Predict</a>
+                        <a href="/dash">Dashboard</a>
+                    </div>
+                </div>
+                    {% if content == 'predict' %}
+                    {% if not prediction %}
+                    <div class="upload">
+                        <h1 class="">Soil Moisture Content Prediction</h1>
+                        <br><br>
+                        <form class="form-horizontal" action="/submit" method="post" enctype="multipart/form-data">
+                    
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="pwd">Upload Your Image :</label>
+                            <div class="col-sm-10">          
+                            <input type="file" class="form-control" placeholder="Hours Studied"  name="my_image" id="pwd">
+                            </div>
+                        </div>
+                    
+                        <div class="form-group">        
+                            <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+                        </form>
+                    {% endif %}
+                  
+                      {% if prediction %}
+                      <div class="predictionContainer">
+                        <h3>Prediction</h3>
+                        <div style="display: flex; justify-content: center">
+                            <img src="{{img_path}}" height="200px" width="200px" alt="">
+                        </div>
+                      
+                        <div class="results" style="display: flex">
+                           <div class="result">
+                                <p>Soil Wetness</p>
+                                <p>{{prediction}}</p>
+                           </div> 
+                           <div class="result">
+                                <p>Moisture</p>
+                                <p>{{moisture}}</p>
+                           </div> 
+                           <div class="result">
+                                <p>Temperature</p>
+                                <p>{{ temp }}</p>
+                           </div> 
+                           <div class="result">
+                                <p>Humidty</p>
+                                <p>{{hum}}</p>
+                           </div>  
+                        </div>
+                        <div class="bottomNavs" style="margin-top: 10px;">
+                            <a href="/"><button>Back</button></a>
+                            <a href="/dash"><button>Dashboard</button></a>
+                        </div>
+                      </div>
+                      </div>
+                      {% endif %}
+                  
+                  </div>
+                {% endif %}
+                {% if content == 'dashboard' %}
+                    <div>
+                        <h3>Dashboard</h3>
+                        <form action="/dash">
+                            <input type="type" placeholder="Rainfall">
+                            <input type="type" placeholder="Temperature">
+                            <input type="type" placeholder="Humidity">
+                        </form>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        
+    </body>
+</html>
